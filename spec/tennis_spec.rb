@@ -1,5 +1,4 @@
 class Tennis
-    attr_accessor :player_1_scored
     attr_accessor :player_1_points
 
     def initialize
@@ -14,7 +13,6 @@ class Tennis
 
     def increase_score(player)
         if player == "player_1"  
-            @player_1_scored = true
             @player_1_points += 1
         end
     end    
