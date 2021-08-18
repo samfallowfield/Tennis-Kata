@@ -8,7 +8,7 @@ class Tennis
 
     def output_score
         return "30-0" if player_1_points == 2
-        return "15-0" if player_1_scored
+        return "15-0" if player_1_points == 1
         "0-0"
     end
 
