@@ -1,7 +1,15 @@
 class Tennis
+    attr_accessor :player_1_scored
     def output_score
+        return "15-0" if player_1_scored
         "0-0"
     end
+
+    def increase_score(player)
+        if player == "player_1"  
+            @player_1_scored = true
+        end
+    end    
 end
 
 RSpec.describe "Tennis" do
